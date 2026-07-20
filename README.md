@@ -92,9 +92,9 @@ htdocs/
 
 ---
 
-## Author
-
+## 👤 Author
 **Faris Bahussain**
 
-Mechanical Engineering Student  
-King Abdulaziz University – Rabigh Branch
+## 📚 Track
+Web & App Development Track
+
