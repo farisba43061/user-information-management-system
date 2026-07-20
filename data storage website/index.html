@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: rgba(15, 23, 42, 0.8);
+            --border: rgba(255, 255, 255, 0.14);
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --primary: #7c3aed;
+            --secondary: #22d3ee;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            color: var(--text);
+        }
+
+        .card {
+            width: min(100%, 800px);
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 20px 45px rgba(2, 8, 23, 0.35);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .subtitle {
+            color: var(--muted);
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        input[type="submit"] {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.95);
+            color: #0f172a;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(2, 8, 23, 0.12);
+        }
+
+        table th,
+        table td {
+            border-bottom: 1px solid #e2e8f0;
+            padding: 12px 14px;
+            text-align: center;
+        }
+
+        table th {
+            background: linear-gradient(90deg, #7c3aed, #22d3ee);
+            color: white;
+            font-weight: 600;
+        }
+
+        table tr:hover {
+            background: #f8fafc;
+        }
+
+        table tr:last-child td {
+            border-bottom: none;
+        }
+
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+    <h2>User Information</h2>
+    <p class="subtitle">Please fill in your details below.</p>
+
+    <form action="index.php" method="POST">
+
+        <label>Name</label>
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required>
+
+        <label>Age</label>
+        <input
+            type="number"
+            name="age"
+            placeholder="Age"
+            required>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>
