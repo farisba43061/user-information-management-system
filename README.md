@@ -10,7 +10,8 @@ A simple web application built using **HTML, CSS, PHP, and MySQL** that allows u
 
 ## Screenshot
 
-![User Information Management System](<img width="1905" height="906" alt="Screenshot 2026-07-21 011900" src="https://github.com/user-attachments/assets/9818e95e-e2dc-4ea3-ab90-a899393ffa8b" />
+![User Information Management System]
+(<img width="1905" height="906" alt="Screenshot 2026-07-21 011900" src="https://github.com/user-attachments/assets/a74acfbb-719e-48ef-9aaf-ec4e8bf08138" />
 )
 
 > **Note:** Replace `image.png` with the name of your screenshot if it is different.
